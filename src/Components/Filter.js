@@ -14,11 +14,11 @@ function handleChange(filterParam) {
 }
 
     return (
-    <footer class="footer">
-        <span class="todo-count">
+    <footer className="footer">
+        <span className="todo-count">
           <strong>{list.filter(t=>!t.checked).length}</strong> items left
             </span>
-            <ul class="filters">
+            <ul className="filters">
                 <li>
                     <FilterBtn selected="selected" name="All" onChange={handleChange}/>
                 </li>

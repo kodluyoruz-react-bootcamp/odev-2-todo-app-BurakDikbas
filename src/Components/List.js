@@ -29,7 +29,7 @@ function List({ todos, onChange }) {
     }, [todos])
 
     return (
-        <ul class="todo-list">
+        <ul className="todo-list">
             {list.map((task, i) =>
                 <Task key={i} id={i} checked={task.checked} task={task.name} onChange={handleSetList} />
             )}

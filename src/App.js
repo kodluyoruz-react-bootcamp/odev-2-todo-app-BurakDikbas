@@ -39,13 +39,13 @@ function App() {
 
   return (
     <div>
-      <section class="todoapp">
-        <header class="header">
+      <section className="todoapp">
+        <header className="header">
           <Title title="todos" />
           <NewTodo placeholder="What needs to be done?" onChange={handleChange} />
         </header>
-        <section class="main">
-          <input class="toggle-all" type="checkbox" />
+        <section className="main">
+          <input className="toggle-all" type="checkbox" />
           <label htmlFor="toggle-all">Mark all as complete</label>
           <List todos={todos} onChange={(list) => setTask(list)} />
           <Filter todos={todos} onChange={(param) => filterChange(param)} />

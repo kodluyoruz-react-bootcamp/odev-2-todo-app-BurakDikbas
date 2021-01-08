@@ -12,10 +12,10 @@ function Task(props) {
     }
     return (
         <li className={checked ? "completed" : ""}>
-            <div class="view">
-                <input class="toggle" type="checkbox" onChange={handleInputChange} checked={checked} />
+            <div className="view">
+                <input className="toggle" type="checkbox" onChange={handleInputChange} checked={checked} />
                 <label>{props.task}</label>
-                <button class="destroy" onClick={(e)=>removeId(props.id)}></button>
+                <button className="destroy" onClick={(e)=>removeId(props.id)}></button>
             </div>
         </li>
     )

@@ -2,7 +2,7 @@ import React from 'react'
 
 function ClearBtn(props) {
     return (
-    <button class="clear-completed">
+    <button className="clear-completed">
         Clear completed
     </button>
     )
